@@ -121,10 +121,10 @@ const Portfolio = () => {
         <a
           className="hyper-link"
           onClick={() =>
-            window.open("https://covid-19-tracker-5f51a.web.app", "_blank")
+            window.open("https://amrut-sabale-portfolio.web.app", "_blank")
           }
         >
-          https://covid-19-tracker-5f51a.web.app
+          https://amrut-sabale-portfolio.web.app
         </a>
         <br />
         <b>GitHub:</b>{" "}
