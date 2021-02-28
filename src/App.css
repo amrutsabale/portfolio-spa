@@ -102,7 +102,7 @@ nav ul li {
 .btn-main-offer {
   border: 1px solid var(--primary-red);
   text-transform: uppercase;
-  border-radius: 0;
+  border-radius: 0.25rem;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   color: var(--primary-white);
   margin: 2rem;
@@ -215,6 +215,7 @@ nav ul li {
 
 .experience {
   padding: 0.7rem;
+  background: var(--primary-light-grey);
 }
 
 .experience-wrapper {
@@ -361,6 +362,11 @@ nav ul li {
 .portfolio-image-popupbox {
   width: 45rem;
   padding: 0 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.project-description {
+  width: 50rem;
 }
 
 .hyper-link {
@@ -521,4 +527,8 @@ textarea.form-control {
 
 .footer p {
   margin-bottom: 0;
+}
+
+.footer-icon {
+  margin: 0 2rem;
 }

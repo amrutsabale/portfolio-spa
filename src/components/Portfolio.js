@@ -1,75 +1,84 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import netflix from "../images/netflix.png";
-import cityGuide from "../images/city-guide-app.png";
+import spotify from "../images/spotify-clone.png";
+import covidTracker from "../images/covid-19-tracker.png";
 import portfolio from "../images/portfolio.png";
-import taskManager from "../images/task-manager.png";
+import githubJobs from "../images/github-jobs.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 import { PopupboxManager, PopupboxContainer } from "react-popupbox";
 import "react-popupbox/dist/react-popupbox.css";
 
 const Portfolio = () => {
-  // Netflix
-  const openPopupboxNetflix = () => {
+  // Spotify
+  const openPopupboxSpotify = () => {
     const content = (
       <>
         <img
           className="portfolio-image-popupbox"
-          src={netflix}
-          alt="Netflix Clone Project..."
+          src={spotify}
+          alt="Spotify Clone Project..."
         />
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque
-          illo est expedita quos adipisci suscipit unde itaque qui perferendis.
-        </p>
+        <h6 className="my-2 font-weight-bold">Spotify-Clone</h6>
+        <div className="project-description">
+          <p>
+            Basic Spotify Web App Clone build using React Context-api and
+            Spotify Real-time API. Project fetches real user spotify account
+            data using axios call. Build is designed using Material-UI & CSS
+            FlexBox.Deployed using Firebase.
+          </p>
+        </div>
+        <b>Demo:</b>{" "}
+        <a
+          className="hyper-link"
+          onClick={() =>
+            window.open("https://spotify-clone-d4f4c.web.app/", "_blank")
+          }
+        >
+          https://spotify-clone-d4f4c.web.app/
+        </a>
+        <br />
         <b>GitHub:</b>{" "}
         <a
           className="hyper-link"
           onClick={() =>
-            window.open("https://github.com/8020Coding/netflix-project")
+            window.open("https://github.com/amrutsabale/spotify-app-clone")
           }
         >
-          https://github.com/8020Coding/netflix-project
+          https://github.com/amrutsabale/spotify-app-clone
         </a>
       </>
     );
     PopupboxManager.open({ content });
   };
 
-  const popupboxConfigNetflix = {
-    titleBar: {
-      enable: true,
-      text: "Netflix clone project.",
-    },
-    fadeIn: true,
-    fadeInSpeed: 500,
-  };
-
-  // City Guide App
-  const openPopupboxCityGuide = () => {
+  // covid-19-tracker
+  const openPopupboxCovidTracker = () => {
     const content = (
       <>
         <img
           className="portfolio-image-popupbox"
-          src={cityGuide}
-          alt="City Guide App Project..."
+          src={covidTracker}
+          alt="covid-19-tracker App Project..."
         />
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque
-          illo est expedita quos adipisci suscipit unde itaque qui perferendis.
-        </p>
+        <h6 className="my-2 font-weight-bold">Covid-19 Tracker</h6>
+        <div className="project-description">
+          <p>
+            Covid-19 Tracker is ReactJs webapp which tracks Realtime Covid-19
+            cases day to day. Build uses realtime Covid-19 Cases API for open
+            Covid Disease Data. UI is designed using CSS flexBox & Material-UI.
+            Data is compared & displayed using ChartJS. Countries wise cases
+            tracking is represented in Map using react-leaflet library.
+          </p>
+        </div>
         <b>Demo:</b>{" "}
         <a
           className="hyper-link"
           onClick={() =>
-            window.open(
-              "https://city-guide-app-project.herokuapp.com/",
-              "_blank"
-            )
+            window.open("https://covid-19-tracker-5f51a.web.app", "_blank")
           }
         >
-          https://city-guide-app-project.herokuapp.com/
+          https://covid-19-tracker-5f51a.web.app
         </a>
         <br />
         <b>GitHub:</b>{" "}
@@ -77,25 +86,16 @@ const Portfolio = () => {
           className="hyper-link"
           onClick={() =>
             window.open(
-              "https://github.com/8020Coding/city-guide-app",
+              "https://github.com/amrutsabale/covid-19-tracker",
               "_blank"
             )
           }
         >
-          https://github.com/8020Coding/city-guide-app
+          https://github.com/amrutsabale/covid-19-tracker
         </a>
       </>
     );
     PopupboxManager.open({ content });
-  };
-
-  const popupboxConfigCityGuide = {
-    titleBar: {
-      enable: true,
-      text: "City Guide App project.",
-    },
-    fadeIn: true,
-    fadeInSpeed: 500,
   };
 
   // Portfolio Project
@@ -107,117 +107,104 @@ const Portfolio = () => {
           src={portfolio}
           alt="Portfolio Project..."
         />
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque
-          illo est expedita quos adipisci suscipit unde itaque qui perferendis.
-        </p>
+        <h6 className="my-2 font-weight-bold">Portfolio-React </h6>
+        <div className="project-description">
+          <p>
+            Portfolio Project implemented using React. Responsive website is
+            designed using Bootstrap & fontawesome. Given particles effect &
+            text typing effect to create beutiful UI using react-particles-js &
+            react-typed libraries. Implemented full-fledge contact form which
+            sends email notification using emailjs.
+          </p>
+        </div>
         <b>Demo:</b>{" "}
         <a
           className="hyper-link"
           onClick={() =>
-            window.open(
-              "https://portfolio-rea-and-material-ui.herokuapp.com/",
-              "_blank"
-            )
+            window.open("https://covid-19-tracker-5f51a.web.app", "_blank")
           }
         >
-          https://portfolio-rea-and-material-ui.herokuapp.com/
+          https://covid-19-tracker-5f51a.web.app
         </a>
         <br />
         <b>GitHub:</b>{" "}
         <a
           className="hyper-link"
           onClick={() =>
-            window.open("https://github.com/8020Coding/portfilio", "_blank")
+            window.open(
+              "https://github.com/amrutsabale/portfolio-spa",
+              "_blank"
+            )
           }
         >
-          https://github.com/8020Coding/portfilio
+          https://github.com/amrutsabale/portfolio-spa
         </a>
       </>
     );
     PopupboxManager.open({ content });
   };
 
-  const popupboxConfigPortfolio = {
-    titleBar: {
-      enable: true,
-      text: "Poftfolio React and Material UI project.",
-    },
-    fadeIn: true,
-    fadeInSpeed: 500,
-  };
-
-  // Task Manager React and Redux Project
-  const openPopupboxTaskManager = () => {
+  // Github-jobs-spa
+  const openPopupboxGithubJobs = () => {
     const content = (
       <>
         <img
           className="portfolio-image-popupbox"
-          src={taskManager}
-          alt="Task Manager React and Redux Project..."
+          src={githubJobs}
+          alt="Github Jobs React Project..."
         />
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque
-          illo est expedita quos adipisci suscipit unde itaque qui perferendis.
-        </p>
-        <b>Demo:</b>{" "}
-        <a
-          className="hyper-link"
-          onClick={() =>
-            window.open(
-              "https://react-redux-task-manager.herokuapp.com/",
-              "_blank"
-            )
-          }
-        >
-          https://react-redux-task-manager.herokuapp.com/
-        </a>
+        <h6 className="my-2 font-weight-bold">Github Jobs Portal </h6>
+        <div className="project-description">
+          <p>
+            Created Github Jobs Portal webapp using Github-Jobs API &
+            React-bootstrap. Portal allows to easily search jobs using
+            description & location and view jobs details on Github. Implemented
+            Pagination functionality & React custom hook.
+          </p>
+        </div>
         <br />
         <b>GitHub:</b>{" "}
         <a
           className="hyper-link"
           onClick={() =>
-            window.open("https://github.com/8020Coding/task-manager", "_blank")
+            window.open(
+              "https://github.com/amrutsabale/github-jobs-spa",
+              "_blank"
+            )
           }
         >
-          https://github.com/8020Coding/task-manager
+          https://github.com/amrutsabale/github-jobs-spa
         </a>
       </>
     );
     PopupboxManager.open({ content });
-  };
-
-  const popupboxConfigTaskManager = {
-    titleBar: {
-      enable: true,
-      text: "Task Manager React and Redux project.",
-    },
-    fadeIn: true,
-    fadeInSpeed: 500,
   };
 
   return (
     <div id="portfolio" className="portfolio-wrapper">
       <div className="container">
-        <h1 className="text-uppercase text-center py-5">portfolio</h1>
+        <h1 className="text-uppercase text-center py-5">projects</h1>
         <div className="image-box-wrapper row justify-content-center">
-          <div className="portfolio-image-box" onClick={openPopupboxNetflix}>
+          <div className="portfolio-image-box" onClick={openPopupboxSpotify}>
             <img
               className="portfolio-image"
-              src={netflix}
-              alt="Netflix Clone Project..."
+              src={spotify}
+              alt="Spotify Clone Project..."
             />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
-          <div className="portfolio-image-box" onClick={openPopupboxCityGuide}>
+          <div
+            className="portfolio-image-box"
+            onClick={openPopupboxCovidTracker}
+          >
             <img
               className="portfolio-image"
-              src={cityGuide}
-              alt="City Guide Project..."
+              src={covidTracker}
+              alt="Covid-19 Tracker Project..."
             />
-            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
             <div className="overflow"></div>
+            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
           <div className="portfolio-image-box" onClick={openPopupboxPortfolio}>
             <img
@@ -225,27 +212,26 @@ const Portfolio = () => {
               src={portfolio}
               alt="Portfolio React and Material UI Project..."
             />
-            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
             <div className="overflow"></div>
+            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
-          <div
-            className="portfolio-image-box"
-            onClick={openPopupboxTaskManager}
-          >
+          <div className="portfolio-image-box" onClick={openPopupboxGithubJobs}>
             <img
               className="portfolio-image"
-              src={taskManager}
-              alt="Task Manager React and Redux Project..."
+              src={githubJobs}
+              alt="Github Jobs React  Project..."
             />
-            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
             <div className="overflow"></div>
+            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
         </div>
       </div>
-      <PopupboxContainer {...popupboxConfigNetflix} />
-      <PopupboxContainer {...popupboxConfigCityGuide} />
-      <PopupboxContainer {...popupboxConfigPortfolio} />
-      <PopupboxContainer {...popupboxConfigTaskManager} />
+      <PopupboxContainer
+        {...{
+          fadeIn: true,
+          fadeInSpeed: 500,
+        }}
+      />
     </div>
   );
 };

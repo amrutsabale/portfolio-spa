@@ -42,8 +42,8 @@ const ContactMe = () => {
       <div className="text-center">
         <h1>contact me</h1>
         <p>
-          Please fill out the form and describe you project needs and I'll
-          contact you as soon as possible.
+          Want to connect with me or have some suggestions? Feel free to contact
+          me here
         </p>
         <span className="success-message">{successMessage}</span>
       </div>
@@ -132,7 +132,7 @@ const ContactMe = () => {
                 <textarea
                   type="text"
                   className="form-control"
-                  placeholder="Please describe shortly you project..."
+                  placeholder="Please describe your message..."
                   name="description"
                   ref={register({
                     required: "Please describe shortly your project needs...",

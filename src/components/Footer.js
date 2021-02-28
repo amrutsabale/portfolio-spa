@@ -1,71 +1,57 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  FacebookShareButton,
-  LinkedinShareButton,
-  TwitterShareButton,
-  FacebookIcon,
-  LinkedinIcon,
-  TwitterIcon,
-} from "react-share";
+  faLinkedin,
+  faGithub,
+  faTwitter,
+  faMedium,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
-  const fooerNavClass = "footer-nav";
   return (
     <div className="footer">
       <div className="container">
         <div className="row">
-          <div className="col-lg-4 col-md-6 col-sm-6">
+          <div className="col-lg-6 col-md-6 col-sm-12 align-items-center ">
             <div className="d-flex">
-              <p>city Moscow Main st 2020 office #223</p>
+              <p>Pune,Maharashtra,India.</p>
             </div>
             <div className="d-flex">
-              <a href="tel:555-555-555">+7(960)555-5555</a>
+              <a href="tel:555-555-555">+918806042730</a>
             </div>
             <div className="d-flex">
-              <p>8020coding@gmail.com</p>
+              <p>samrut355@gmail.com</p>
             </div>
           </div>
-          <div className="col-lg-3 col-md-2 col-sm-6">
-            <div className="row">
-              <div className="col">
-                <a className={fooerNavClass}>Home</a>
-                <br />
-                <a className={fooerNavClass}>About me</a>
-                <br />
-                <a className={fooerNavClass}>Services</a>
-              </div>
-              <div className="col">
-                <a className={fooerNavClass}>Experience</a>
-                <br />
-                <a className={fooerNavClass}>Portfolio</a>
-                <br />
-                <a className={fooerNavClass}>Contacts</a>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-5 col-md-5 col-sm-6 align-items-center">
-            <LinkedinShareButton
-              url={"https://www.youtube.com/8020coding"}
-              title={"ReactJs Developer"}
-              hashtag="#javascript"
-            >
-              <LinkedinIcon className="mx-3" size={36} />
-            </LinkedinShareButton>
-            <TwitterShareButton
-              url={"https://www.youtube.com/8020coding"}
-              quote={"ReactJs Developer"}
-              hashtag="#javascript"
-            >
-              <TwitterIcon className="mx-3" size={36} />
-            </TwitterShareButton>
-            <FacebookShareButton
-              url={"https://www.youtube.com/8020coding"}
-              quote={"ReactJs Developer"}
-              hashtag="#javascript"
-            >
-              <FacebookIcon className="mx-3" size={36} />
-            </FacebookShareButton>
+
+          <div className="col-lg-6 col-md-6 col-sm-12 align-items-center my-3">
+            <FontAwesomeIcon
+              onClick={() =>
+                window.open("https://www.linkedin.com/in/amrut-sabale/")
+              }
+              className="footer-icon"
+              icon={faLinkedin}
+              size="2x"
+            />
+            <FontAwesomeIcon
+              onClick={() => window.open("https://twitter.com/amrutsabale")}
+              className="footer-icon"
+              icon={faTwitter}
+              size="2x"
+            />
+            <FontAwesomeIcon
+              onClick={() => window.open("https://github.com/amrutsabale")}
+              className="footer-icon"
+              icon={faGithub}
+              size="2x"
+            />
+            <FontAwesomeIcon
+              onClick={() => window.open("https://amrutsabale.medium.com/")}
+              className="footer-icon"
+              icon={faMedium}
+              size="2x"
+            />
           </div>
         </div>
         <p className="pt-3 text-center">

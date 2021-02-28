@@ -39,18 +39,6 @@ const Navbar = () => {
             <li className="nav-item">
               <Link
                 smooth={true}
-                to="portfolio"
-                offset={-50}
-                className="nav-link active"
-                aria-current="page"
-                href="#"
-              >
-                projects
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                smooth={true}
                 to="experience"
                 offset={-50}
                 className="nav-link active"
@@ -58,6 +46,18 @@ const Navbar = () => {
                 href="#"
               >
                 work experience
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                smooth={true}
+                to="portfolio"
+                offset={-50}
+                className="nav-link active"
+                aria-current="page"
+                href="#"
+              >
+                projects
               </Link>
             </li>
             <li className="nav-item">
@@ -72,7 +72,11 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a
+                className="nav-link"
+                download="Amrut_Sabale_Resume.pdf"
+                href={`${process.env.PUBLIC_URL}/Amrut_Sabale_Resume.pdf`}
+              >
                 Resume
               </a>
             </li>
