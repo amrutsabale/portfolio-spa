@@ -365,9 +365,6 @@ nav ul li {
   justify-content: center;
   align-items: center;
 }
-.project-description {
-  width: 50rem;
-}
 
 .hyper-link {
   cursor: pointer;
@@ -530,5 +527,5 @@ textarea.form-control {
 }
 
 .footer-icon {
-  margin: 0 2rem;
+  margin: 0 0.8rem;
 }

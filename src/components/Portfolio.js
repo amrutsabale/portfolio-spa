@@ -228,6 +228,9 @@ const Portfolio = () => {
       </div>
       <PopupboxContainer
         {...{
+          titleBar: {
+            enable: true,
+          },
           fadeIn: true,
           fadeInSpeed: 500,
         }}
