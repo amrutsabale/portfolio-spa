@@ -56,10 +56,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <p className="pt-3 text-center">
-          Year {new Date().getFullYear()}&nbsp;Amrut Sabale | Made with ❤️ in
-          India
-        </p>
+        <div className="footer-end-text">
+          <p className="pt-3 text-center">
+            Year {new Date().getFullYear()}&nbsp;Amrut Sabale
+          </p>
+        </div>
       </div>
     </div>
   );

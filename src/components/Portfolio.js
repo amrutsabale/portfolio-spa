@@ -14,20 +14,20 @@ const Portfolio = () => {
   const openPopupboxSpotify = () => {
     const content = (
       <>
-        <img
-          className="portfolio-image-popupbox"
-          src={spotify}
-          alt="Spotify Clone Project..."
-        />
-        <h6 className="my-2 font-weight-bold">Spotify-Clone</h6>
-        <div className="project-description">
-          <p>
-            Basic Spotify Web App Clone build using React Context-api and
-            Spotify Real-time API. Project fetches real user spotify account
-            data using axios call. Build is designed using Material-UI & CSS
-            FlexBox.Deployed using Firebase.
-          </p>
+        <div className="image-popupbox-container">
+          <img
+            className="portfolio-image-popupbox"
+            src={spotify}
+            alt="Spotify Clone Project..."
+          />
         </div>
+        <h6 className="my-2 font-weight-bold">Spotify-Clone</h6>
+        <p>
+          Basic Spotify Web App Clone build using React Context-api and Spotify
+          Real-time API. Project fetches real user spotify account data using
+          axios call. Build is designed using Material-UI & CSS FlexBox.Deployed
+          using Firebase.
+        </p>
         <b>Demo:</b>{" "}
         <a
           className="hyper-link"
@@ -56,21 +56,21 @@ const Portfolio = () => {
   const openPopupboxCovidTracker = () => {
     const content = (
       <>
-        <img
-          className="portfolio-image-popupbox"
-          src={covidTracker}
-          alt="covid-19-tracker App Project..."
-        />
-        <h6 className="my-2 font-weight-bold">Covid-19 Tracker</h6>
-        <div className="project-description">
-          <p>
-            Covid-19 Tracker is ReactJs webapp which tracks Realtime Covid-19
-            cases day to day. Build uses realtime Covid-19 Cases API for open
-            Covid Disease Data. UI is designed using CSS flexBox & Material-UI.
-            Data is compared & displayed using ChartJS. Countries wise cases
-            tracking is represented in Map using react-leaflet library.
-          </p>
+        <div className="image-popupbox-container">
+          <img
+            className="portfolio-image-popupbox"
+            src={covidTracker}
+            alt="covid-19-tracker App Project..."
+          />
         </div>
+        <h6 className="my-2 font-weight-bold">Covid-19 Tracker</h6>
+        <p>
+          Covid-19 Tracker is ReactJs webapp which tracks Realtime Covid-19
+          cases day to day. Build uses realtime Covid-19 Cases API for open
+          Covid Disease Data. UI is designed using CSS flexBox & Material-UI.
+          Data is compared & displayed using ChartJS. Countries wise cases
+          tracking is represented in Map using react-leaflet library.
+        </p>
         <b>Demo:</b>{" "}
         <a
           className="hyper-link"
@@ -102,21 +102,21 @@ const Portfolio = () => {
   const openPopupboxPortfolio = () => {
     const content = (
       <>
-        <img
-          className="portfolio-image-popupbox"
-          src={portfolio}
-          alt="Portfolio Project..."
-        />
-        <h6 className="my-2 font-weight-bold">Portfolio-React </h6>
-        <div className="project-description">
-          <p>
-            Portfolio Project implemented using React. Responsive website is
-            designed using Bootstrap & fontawesome. Given particles effect &
-            text typing effect to create beutiful UI using react-particles-js &
-            react-typed libraries. Implemented full-fledge contact form which
-            sends email notification using emailjs.
-          </p>
+        <div className="image-popupbox-container">
+          <img
+            className="portfolio-image-popupbox"
+            src={portfolio}
+            alt="Portfolio Project..."
+          />
         </div>
+        <h6 className="my-2 font-weight-bold">Portfolio-React </h6>
+        <p>
+          Portfolio Project implemented using React. Responsive website is
+          designed using Bootstrap & fontawesome. Given particles effect & text
+          typing effect to create beutiful UI using react-particles-js &
+          react-typed libraries. Implemented full-fledge contact form which
+          sends email notification using emailjs.
+        </p>
         <b>Demo:</b>{" "}
         <a
           className="hyper-link"
@@ -148,21 +148,20 @@ const Portfolio = () => {
   const openPopupboxGithubJobs = () => {
     const content = (
       <>
-        <img
-          className="portfolio-image-popupbox"
-          src={githubJobs}
-          alt="Github Jobs React Project..."
-        />
-        <h6 className="my-2 font-weight-bold">Github Jobs Portal </h6>
-        <div className="project-description">
-          <p>
-            Created Github Jobs Portal webapp using Github-Jobs API &
-            React-bootstrap. Portal allows to easily search jobs using
-            description & location and view jobs details on Github. Implemented
-            Pagination functionality & React custom hook.
-          </p>
+        <div className="image-popupbox-container">
+          <img
+            className="portfolio-image-popupbox"
+            src={githubJobs}
+            alt="Github Jobs React Project..."
+          />
         </div>
-        <br />
+        <h6 className="my-2 font-weight-bold">Github Jobs Portal </h6>
+        <p>
+          Created Github Jobs Portal webapp using Github-Jobs API &
+          React-bootstrap. Portal allows to easily search jobs using description
+          & location and view jobs details on Github. Implemented Pagination
+          functionality & React custom hook.
+        </p>
         <b>GitHub:</b>{" "}
         <a
           className="hyper-link"

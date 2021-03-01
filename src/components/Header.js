@@ -13,7 +13,7 @@ const Header = () => {
           strings={[
             "ReactJs Developer",
             "Frontend Software Engineer",
-            "Loves JavaScript",
+            "I Love JavaScript",
           ]}
           typeSpeed={40}
           backSpeed={60}
