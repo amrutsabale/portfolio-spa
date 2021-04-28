@@ -3,7 +3,7 @@ import React from "react";
 import spotify from "../images/spotify-clone.png";
 import covidTracker from "../images/covid-19-tracker.png";
 import portfolio from "../images/portfolio.png";
-import githubJobs from "../images/github-jobs.png";
+import devConnector from "../images/dev-connector.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 import { PopupboxManager, PopupboxContainer } from "react-popupbox";
@@ -144,35 +144,43 @@ const Portfolio = () => {
     PopupboxManager.open({ content });
   };
 
-  // Github-jobs-spa
-  const openPopupboxGithubJobs = () => {
+  // dev-connector
+  const openPopupboxDevConnector = () => {
     const content = (
       <>
         <div className="image-popupbox-container">
           <img
             className="portfolio-image-popupbox"
-            src={githubJobs}
-            alt="Github Jobs React Project..."
+            src={devConnector}
+            alt="Dev-connector React Project..."
           />
         </div>
-        <h6 className="my-2 font-weight-bold">Github Jobs Portal </h6>
+        <h6 className="my-2 font-weight-bold">Dev-Connector </h6>
         <p>
-          Created Github Jobs Portal webapp using Github-Jobs API &
-          React-bootstrap. Portal allows to easily search jobs using description
-          & location and view jobs details on Github. Implemented Pagination
-          functionality & React custom hook.
+          Build an in depth full stack Social Network Application using Node.js,
+          Express, React, Redux and MongoDB along with ES6+.
         </p>
+        <b>Demo:</b>{" "}
+        <a
+          className="hyper-link"
+          onClick={() =>
+            window.open("https://dev-connector-spa.herokuapp.com/", "_blank")
+          }
+        >
+          https://dev-connector-spa.herokuapp.com
+        </a>
+        <br />
         <b>GitHub:</b>{" "}
         <a
           className="hyper-link"
           onClick={() =>
             window.open(
-              "https://github.com/amrutsabale/github-jobs-spa",
+              "https://github.com/amrutsabale/dev-connector",
               "_blank"
             )
           }
         >
-          https://github.com/amrutsabale/github-jobs-spa
+          https://github.com/amrutsabale/dev-connector
         </a>
       </>
     );
@@ -214,11 +222,14 @@ const Portfolio = () => {
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
-          <div className="portfolio-image-box" onClick={openPopupboxGithubJobs}>
+          <div
+            className="portfolio-image-box"
+            onClick={openPopupboxDevConnector}
+          >
             <img
               className="portfolio-image"
-              src={githubJobs}
-              alt="Github Jobs React  Project..."
+              src={devConnector}
+              alt="Dev-connector React  Project..."
             />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
