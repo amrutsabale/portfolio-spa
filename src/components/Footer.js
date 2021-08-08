@@ -12,21 +12,10 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="container">
-        <div className="row">
-          <div className="col-lg-6 col-md-12 col-sm-12 align-items-center ">
-            <div className="d-flex">
-              <p>Pune,Maharashtra,India.</p>
-            </div>
-            <div className="d-flex">
-              <a href="tel:+918806042730">+918806042730</a>
-            </div>
-            <div className="d-flex">
-              <p>samrut355@gmail.com</p>
-            </div>
-          </div>
+        <div className="row justify-content-center">
 
           <div className="col-lg-6 col-md-12 col-sm-12 align-items-center my-3">
-            <div className="row">
+            <div className="row justify-content-center">
               <FontAwesomeIcon
                 onClick={() =>
                   window.open("https://www.linkedin.com/in/amrut-sabale/")
@@ -56,7 +45,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="footer-end-text">
+        <div className="footer-end-text justify-content-center">
           <p className="pt-3 text-center">
             Year {new Date().getFullYear()}&nbsp;Amrut Sabale
           </p>

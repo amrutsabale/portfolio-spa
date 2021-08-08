@@ -7,12 +7,21 @@ const Experience = () => {
         <h1>MY JOURNEY</h1>
       </div>
       <div className="container experience-wrapper">
+      <div className="timeline-block timeline-block-left">
+          <div className="marker"></div>
+          <div className="timeline-content">
+            <h3>2021(June)-present</h3>
+            <p>
+             Software Engineer at BigBinary Solutions Pvt. Ltd. Mostly working on web application development.
+            </p>
+          </div>
+        </div>
         <div className="timeline-block timeline-block-right">
           <div className="marker"></div>
           <div className="timeline-content">
-            <h3>2019-Present</h3>
+            <h3>2019-2021(May)</h3>
             <p>
-              I am ReactJs Developer in Cognizant Technology Solutions.
+              Worked as a ReactJs Developer in Cognizant Technology Solutions.
               Developed and modernized 3 production ready projects for clients
               using ReactJs. Collaborated with team to design & develop reusable
               components with storybook to be used with the organization’s new

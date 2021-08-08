@@ -192,15 +192,7 @@ const Portfolio = () => {
       <div className="container">
         <h1 className="text-uppercase text-center py-5">projects</h1>
         <div className="image-box-wrapper row justify-content-center">
-          <div className="portfolio-image-box" onClick={openPopupboxSpotify}>
-            <img
-              className="portfolio-image"
-              src={spotify}
-              alt="Spotify Clone Project..."
-            />
-            <div className="overflow"></div>
-            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-          </div>
+         
           <div
             className="portfolio-image-box"
             onClick={openPopupboxCovidTracker}
@@ -209,6 +201,18 @@ const Portfolio = () => {
               className="portfolio-image"
               src={covidTracker}
               alt="Covid-19 Tracker Project..."
+            />
+            <div className="overflow"></div>
+            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+          </div>
+          <div
+            className="portfolio-image-box"
+            onClick={openPopupboxDevConnector}
+          >
+            <img
+              className="portfolio-image"
+              src={devConnector}
+              alt="Dev-connector React  Project..."
             />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
@@ -222,14 +226,11 @@ const Portfolio = () => {
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
-          <div
-            className="portfolio-image-box"
-            onClick={openPopupboxDevConnector}
-          >
+          <div className="portfolio-image-box" onClick={openPopupboxSpotify}>
             <img
               className="portfolio-image"
-              src={devConnector}
-              alt="Dev-connector React  Project..."
+              src={spotify}
+              alt="Spotify Clone Project..."
             />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />

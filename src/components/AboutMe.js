@@ -15,7 +15,9 @@ const AboutMe = () => {
             Hello! I am Amrut. I have been developing high-quality webapps for
             over 2 years. I'm a Frontend Software Engineer. Currently living in
             Pune, India.I create responsive websites that are displayed on all
-            devices desktops and smartphones. During the past 2 years of working
+            devices desktops and smartphones.
+          </p>
+          <p> During the past 2 years of working
             with software development, I've gained insight into a large area of
             Web development as well as system architecture. I've been heavily
             invested in the JavaScript ecosystem and have in-depth knowledge and
